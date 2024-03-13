@@ -1,0 +1,57 @@
+:root {
+	--oxford-blue: #011936; /* Mörkblå färg */
+	--dark-spring-green: #04724d; /* Mörk vårgrön färg */
+	--shamrock-green: #32965d; /* Shamrock grön färg */
+	--persian-orange: #f0924f; /* Persisk orange färg */
+	--cream: #f3f9d2; /* Krämig färg */
+
+	font-family: "Rubik", sans-serif; /* Typsnitt för sidan */
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	line-height: 1.5;
+	background-color: var(--oxford-blue); /* Bakgrundsfärg för hela sidan */
+}
+
+body {
+	margin: 0;
+	display: flex;
+	place-items: center;
+	min-width: 320px;
+	min-height: 100vh;
+}
+
+main {
+	max-width: 500px;
+	margin: 0 auto;
+	padding: 2rem;
+	border-radius: 2rem;
+	border: 5px solid var(--dark-spring-green); /* Ram runt huvudinnehållet */
+	background-color: var(--cream); /* Bakgrundsfärg för huvudinnehållet */
+}
+
+button {
+	background-color: #04724d; /* Bakgrundsfärg för knappen */
+	font-size: large;
+	border-radius: 10px;
+	padding: 1rem;
+	border: 1px solid #04724d; /* Ram runt knappen */
+}
+
+button:hover {
+	background-color: darkgreen; /* Ändrar bakgrundsfärgen när musen hovrar över knappen */
+}
+
+.frog {
+    position: absolute; /* Absolut position för grodan på sidan */
+    font-size: 24px; /* Storlek på groda-emoji */
+    color: #32965d; /* Färg på grodan  */
+    animation: fall 2s linear infinite; /* Animerar grodan att falla ner oändligt */
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh); /* Flyttar grodan 100% av sidans höjd neråt */
+        opacity: 0; /* Gör grodan osynlig */
+    }
+}
